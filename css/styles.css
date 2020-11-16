@@ -1,34 +1,54 @@
 body {
   font-family: "Montserrat";
+  text-align: center;
 }
 
-#title {
-  background-color: #ff4c68;
-  color: #fff;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat-Bold";
 }
 
-.container-fluid {
-  padding: 3% 15%;
+h2 {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
-h1 {
+p {
+  color: #8f8f8f;
+}
+
+/* Headings */
+
+.big-heaing {
   font-family: "Montserrat-Black", sans-serif;
   font-size: 3rem;
   line-height: 1.5;
 }
 
-h2 {
-  font-family: "Montserrat-Bold";
+.section-heading {
   font-size: 3rem;
   line-height: 1.5;
 }
 
-h3 {
-  font-family: "Montserrat-Bold";
-  font-size: 1.5rem;
+/* Containers */
+
+.container-fluid {
+  padding: 7% 15%;
 }
-p {
-  color: #8f8f8f;
+
+/* Sections */
+
+.colored-section {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
 }
 
 /* Navigation Bar */
@@ -58,21 +78,33 @@ p {
   margin: 5% 3% 5% 0;
 }
 
+/* Title Section */
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+
 /* Title Image */
 
 .title-image {
   width: 60%;
   transform: rotate(25deg);
+  position: absolute;
+  right: 305;
 }
 
 /* Features Section */
 
 #features {
-  padding: 7% 15%;
+  position: relative;
+}
+
+.feature-title {
+  font-size: 1.5rem;
 }
 
 .feature-box {
-  text-align: center;
   padding: 5%;
 }
 
@@ -88,10 +120,12 @@ p {
 /* Testimonial Section */
 
 #testimonials {
-  padding: 7% 15%;
-  text-align: center;
   background-color: #ef8172;
-  color: #fff;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 .testimonial-image {
@@ -102,11 +136,42 @@ p {
 
 #press {
   background-color: #ef8172;
-  text-align: center;
   padding: 3%;
 }
 
 .press-logo {
   width: 15%;
   margin: 20px 20px 50px;
+}
+
+/* Pricing Section */
+
+#pricing {
+  padding: 100px;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+/* Footer Section */
+
+.social-icon {
+  margin: 20px 10px;
+}
+
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
 }
